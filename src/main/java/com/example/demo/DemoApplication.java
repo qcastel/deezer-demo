@@ -2,6 +2,7 @@ package com.example.demo;
 
 import java.util.Arrays;
 import java.util.Map;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 import org.springframework.boot.SpringApplication;
@@ -28,7 +29,7 @@ public class DemoApplication {
 
 	private static final String CLIENT_ID = "572182";
 	private static final String CLIENT_SECRET = "66d55dc4fd706c8ba2864c72495b44b7";
-	private static final String FLAG = "$CTF[7f56a696-7d26-11ed-a1eb-0242ac120002]";
+	private static final String FLAG = "$CTF[" + UUID.randomUUID() +"]";
 	public static User user= null;
 
 	@GetMapping("/")
